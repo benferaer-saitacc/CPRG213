@@ -13,7 +13,7 @@ You are encouraged to use the provided naming convention for ease of review.
 
 let modelName = document.getElementById("model-text").innerHTML;
 let durationStr = document.getElementById("duration-text").innerHTML;
-duration = parseInt(durationStr);
+let duration = parseInt(durationStr);
 
 /****************** helper function ******************/
 /* create a function called recalculate() which will
@@ -85,8 +85,8 @@ let durationButton = document.getElementById("duration-button");
 
 function changeDuration() {
   let durationText = document.getElementById("duration-text");
-  durationPromptStr = prompt("Please enter your desired rental duration:");
-  durationPrompt = parseInt(durationPromptStr);
+  let durationPromptStr = prompt("Please enter your desired rental duration:");
+  let durationPrompt = parseInt(durationPromptStr);
   if (!isNaN(durationPrompt)) {
     duration = durationPrompt;
     durationText.innerHTML = duration;
