@@ -34,7 +34,7 @@ function recalculate() {
   } else if (modelName == "Model CPRG") {
     totalCost = duration * 213;
   }
-  costLabel.innerHTML = totalCost;
+  costLabel.innerHTML = parseFloat(totalCost);
 }
 
 /****************** model button logic ******************/
