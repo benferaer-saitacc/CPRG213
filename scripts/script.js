@@ -33,8 +33,8 @@ function recalculate() {
     totalCost = duration * 100;
   } else if (modelName == "Model CPRG") {
     totalCost = duration * 213;
-    formattedCost = totalCost.tofixed(2);
   }
+  formattedCost = totalCost.toFixed(2);
   costLabel.innerHTML = formattedCost;
 }
 
